@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import schoolsoftLogo from '../assets/schoolsoftname.webp';
+import { Helmet } from 'react-helmet';
+
 
 
 
@@ -42,6 +44,9 @@ function QuestionComponent() {
 
   return (
     <div>
+      <Helmet>
+          <title>SchoolSoft</title>
+      </Helmet>
       <div className='flex justify-around ml-96 mt-10 mb-2'>
         <p className="text-gray-500 text-xs">By: Isaac Glifberg</p>
       </div>
