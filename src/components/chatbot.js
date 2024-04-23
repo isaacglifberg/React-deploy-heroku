@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import schoolsoftLogo from '../assets/schoolsoftname.webp';
 
 
+
 function QuestionComponent() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+
 
   const API_URL = process.env.REACT_APP_API_URL
 
